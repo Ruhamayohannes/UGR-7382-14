@@ -1,0 +1,347 @@
+body {
+  font-family: Arial, serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 226, 245);
+  color: black;
+}
+
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: white;
+  color: magenta;
+  padding: 1em;
+}
+
+.logo-container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.logo-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+nav.site-navigation {
+  display: flex;
+  flex: 3;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: magenta;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav ul li a:hover {
+  background-color: rgb(250, 117, 250);
+  color: white;
+  border-radius: 5px;
+}
+
+nav ul li a:active {
+  opacity: 0.7;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#main-content-index,
+#main-content-about,
+#main-content-contact,
+#main-content-tasks,
+#main-content-muse {
+  max-width: 1200px;
+  margin: 2pc auto;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+#home-section {
+  display: flex; /* Enables flexbox layout */
+  flex-wrap: nowrap; /* Ensures columns stay on one line */
+}
+
+#home-image {
+  width: 10vw; /* Sets image width to fill the column */
+  height: 10vh; /* Maintains aspect ratio */
+  align-self: center; /* Center image in left column */
+}
+
+.card {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden; /* Prevents content from spilling out */
+}
+
+#contact-container.card {
+  background-color: #fff; /* Card background color */
+  border-radius: 10px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px; /* Padding inside the card */
+  margin-top: 20px; /* Space above the card */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  gap: 15px; /* Space between child elements */
+}
+
+#home-section {
+  display: flex; /* Ensures flex layout for child elements */
+  flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+img {
+  max-width: 100%; /* Ensures image does not exceed column width */
+  height: auto; /* Maintains aspect ratio */
+  align-self: center; /* Centers image vertically within column */
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* Ensures each column takes up an equal share of the space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 20px; /* Add padding on both sides for spacing */
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 20px; /* Matches the right column's left padding for consistency */
+}
+
+#home-image {
+  width: 100%; /* Ensures the image is responsive and fills the column */
+  height: auto; /* Maintains aspect ratio */
+  align-self: center; /* Center image in left column */
+}
+
+.right-column {
+  padding-left: 20px; /* Adds spacing between the columns */
+}
+
+.carousel {
+  display: flex; /* Establish a flex container */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 20px; /* Space between carousel items */
+  padding: 20px 0; /* Vertical padding for the carousel */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.carousel-slide {
+  flex: 0 0 auto; /* Do not grow, do not shrink, and basis is auto */
+  display: flex; /* Flex container for the slide */
+  align-items: center; /* Align items in the center vertically */
+  width: 600px; /* Fixed width for each slide */
+  background-color: #fff; /* Background color of the slide */
+  border-radius: 10px; /* Rounded corners for the slide */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Padding inside the slide */
+  margin: 0 10px; /* Horizontal margin for the slide */
+}
+
+.carousel-image {
+  width: 50%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for the image */
+  margin-bottom: auto; /* Space below the image */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+}
+.carousel-text {
+  width: 50%;
+  height: auto;
+  padding: 0 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(249, 247, 248);
+  margin-right: 2lh;
+  overflow: hidden;
+  text-align: left; /* Center the text inside the carousel text */
+  padding: 0 10px; /* Padding inside the carousel text container */
+}
+
+.carousel-text h2,
+.carousel-text p {
+  margin: 5px 0; /* Margin for spacing */
+}
+
+.carousel-text h2 {
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.carousel-text p {
+  font-size: 0.9em; /* Smaller font size for the description */
+}
+
+#contact-details {
+  display: flex; /* Use flexbox for the details */
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 10px; /* Space between details */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+#contact-form {
+  display: flex; /* Use flexbox for the form layout */
+  flex-direction: column; /* Stack form elements vertically */
+  gap: 10px; /* Space between form elements */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  padding: 8px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Border color for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  margin-bottom: 10px; /* Space below inputs */
+}
+
+#contact-details p,
+#contact-form input,
+#contact-form textarea,
+#contact-form label {
+  margin: 10px 0; /* Provides consistent spacing */
+  overflow: hidden;
+}
+
+input[type="submit"] {
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  padding: 10px 15px; /* Adds padding for better touch area and aesthetics */
+  margin-top: 10px; /* Adds margin on the top for spacing from the last form element */
+  border: none; /* Removes the default border */
+  border-radius: 5px; /* Rounds the corners of the button */
+  background-color: rgb(250, 117, 250);
+  color: white; /* Sets the text color to white */
+  font-weight: bold; /* Makes the button text bold */
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(250, 117, 250);
+  color: black;
+  border-radius: 5px;
+}
+
+section h1,
+section h2,
+section h3,
+section h4 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+footer.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: magenta;
+  padding: 1em 0;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 50px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 480px) {
+  header.site-header {
+    flex-direction: column;
+  }
+
+  nav.site-navigation {
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  #home-section,
+  #image-and-text,
+  .carousel-slide {
+    flex-direction: column;
+  }
+
+  #home-image,
+  #about-image {
+    max-width: 100%;
+  }
+
+  .social-media-links {
+    justify-content: end;
+  }
+  #contact-section {
+    flex-direction: column;
+  }
+
+  #contact-image {
+    align-self: center; /* Centers the image on smaller screens */
+    width: auto; /* Adjusts width to be auto on smaller screens */
+    margin-bottom: 20px; /* Adds spacing below the image */
+  }
+
+  .card {
+    padding: 10px; /* Reduces padding on smaller screens */
+  }
+  #contact-container.card {
+    padding: 15px; /* Smaller padding on small screens */
+  }
+
+  #contact-details {
+    flex-direction: column; /* Stack details vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+  .carousel-slide {
+    width: 80%; /* Increase width for smaller screens to take more space */
+    flex-direction: column;
+  }
+  .carousel-image,
+  .carousel-text {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
