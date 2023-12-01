@@ -1,0 +1,465 @@
+body {
+  font-family: Arial, serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 226, 245);
+  color: black;
+}
+
+header.site-header {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  align-items: start;
+  background-color: white;
+  color: magenta;
+  padding: 1em;
+}
+
+.logo-container {
+  display: grid;
+  grid-template-columns: auto; /* Adjust as needed for content */
+  justify-items: start; /* Aligns content at the start of the grid area */
+}
+
+.logo-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+nav.site-navigation {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Adjust based on the number of items */
+  justify-content: end; /* Aligns items to the end of the container */
+}
+
+nav ul {
+  display: grid;
+  grid-auto-flow: column; /* Aligns the items horizontally */
+  grid-gap: 20px; /* Equivalent to gap in flexbox */
+  align-items: center; /* Keeps the alignment to center */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: magenta;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav ul li a:hover {
+  background-color: rgb(250, 117, 250);
+  color: white;
+  border-radius: 5px;
+}
+
+nav ul li a:active {
+  opacity: 0.7;
+}
+
+main {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#main-content-index,
+#main-content-about,
+#main-content-contact,
+#main-content-tasks,
+#main-content-muse {
+  max-width: 1200px;
+  margin: 2pc auto;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+#home-section {
+  display: grid;
+  grid-auto-flow: column;
+  overflow: auto;
+}
+
+#home-image {
+  width: 10vw;
+  height: 10vh;
+  align-self: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: grid;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#contact-container.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 15px;
+}
+
+#home-section {
+  display: grid; /* Enables grid layout */
+  grid-auto-flow: column; /* Places items in a horizontal layout */
+  overflow: auto; /* Allows scrolling if content overflows */
+}
+
+img {
+  max-width: 100%; /* Ensures image does not exceed column width */
+  height: auto; /* Maintains aspect ratio */
+  align-self: center; /* Centers image vertically within column */
+}
+
+.left-column,
+.right-column {
+  display: grid; /* Enables grid layout */
+  grid-template-rows: auto; /* Allows rows to adjust based on content */
+  justify-content: center; /* Centers content horizontally in the grid cell */
+  box-sizing: border-box;
+  padding: 0 20px; /* Add padding on both sides for spacing */
+}
+
+.left-column {
+  display: grid; /* Switches to grid layout */
+  grid-auto-flow: row; /* Aligns the child elements in a column */
+  justify-items: end; /* Aligns items to the right end of the grid cell */
+  padding-right: 20px; /* Keeps the padding for consistency */
+}
+
+#home-image {
+  width: 100%; /* Ensures the image is responsive and fills the column */
+  height: auto; /* Maintains aspect ratio */
+  justify-self: center; /* Center image horizontally within its grid cell */
+}
+
+.right-column {
+  padding-left: 20px; /* Adds spacing between the columns */
+}
+
+#contact-details {
+  display: grid; /* Switches to grid layout */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Creates flexible columns that wrap */
+  gap: 10px; /* Space between grid items */
+  justify-content: space-between; /* Distributes items evenly across the container */
+}
+
+#contact-form {
+  display: grid; /* Switches to grid layout */
+  grid-auto-flow: row; /* Aligns the child elements in a column */
+  row-gap: 10px; /* Space between form elements */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  padding: 8px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Border color for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  margin-bottom: 10px; /* Space below inputs */
+}
+
+#contact-details p,
+#contact-form input,
+#contact-form textarea,
+#contact-form label {
+  margin: 10px 0; /* Provides consistent top and bottom spacing */
+  overflow: hidden; /* Prevents content from spilling outside the boundaries */
+}
+
+input[type="submit"] {
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  padding: 10px 15px; /* Adds padding for better touch area and aesthetics */
+  margin-top: 10px; /* Adds margin on the top for spacing from the last form element */
+  border: none; /* Removes the default border */
+  border-radius: 5px; /* Rounds the corners of the button */
+  background-color: rgb(
+    250,
+    117,
+    250
+  ); /* Bright background color for the button */
+  color: white; /* Sets the text color to white */
+  font-weight: bold; /* Makes the button text bold */
+  overflow: hidden;
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(230, 107, 230); /* Slightly darker shade on hover */
+  color: black; /* Changes text color to black on hover */
+  border-radius: 5px; /* Maintains rounded corners on hover */
+}
+
+section h1,
+section h2,
+section h3,
+section h4 {
+  font-size: 2em; /* Sets the font size */
+  margin: 0.67em 0; /* Top and bottom margins */
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: column;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  column-gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.carousel-slide {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  scroll-snap-align: start;
+  position: relative;
+  align-items: start;
+  width: 300px; /* Fixed width for each slide */
+  background-color: #fff; /* Background color of the slide */
+  border-radius: 10px; /* Rounded corners for the slide */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Padding inside the slide */
+  margin: 0 10px; /* Horizontal margin for the slide */
+  min-width: 200px;
+}
+
+.carousel-image {
+  width: 100%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for the image */
+  margin-top: auto;
+  margin-bottom: auto; /* Space above and below the image */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.carousel-text {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Height adjusts to content */
+  padding: 0 10px; /* Padding on both sides */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  background-color: rgb(249, 247, 248); /* Light background color */
+  margin-right: 20px; /* Adjusted right margin */
+  overflow: hidden; /* Ensures content doesn't spill out */
+  text-align: center; /* Center the text */
+}
+
+.carousel-text h2,
+.carousel-text p {
+  margin: 5px 0; /* Margin for spacing */
+}
+
+.carousel-control {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.carousel-text h2 {
+  margin-bottom: 10px; /* Space below the heading */
+  font-size: 1.2em;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-text p {
+  font-size: 0.9em; /* Smaller font size for the description */
+}
+
+footer.site-footer {
+  display: grid; /* Switches to grid layout */
+  place-items: center; /* Centers content both horizontally and vertically */
+  background-color: black; /* Background color */
+  color: magenta; /* Text color */
+  padding: 1em 0; /* Padding on top and bottom */
+}
+
+.social-media-links {
+  display: grid; /* Switches to grid layout */
+  justify-content: end; /* Aligns the grid items towards the end of the row */
+  align-items: end; /* Aligns the grid items towards the end of the column */
+  grid-auto-flow: column; /* Places items in a horizontal layout */
+  gap: 50px; /* Space between grid items */
+}
+
+.social-icon {
+  width: 30px; /* Fixed width */
+  height: 30px; /* Fixed height */
+}
+
+@media (max-width: 480px) {
+  header.site-header {
+    display: grid; /* Switch to grid layout for smaller screens */
+    grid-template-columns: 1fr;
+    justify-items: start; /* Stack items vertically */
+  }
+
+  nav.site-navigation {
+    display: grid; /* Ensures the navigation uses grid layout */
+    justify-content: end; /* Horizontally centers the grid items */
+    grid-auto-flow: row; /* Aligns items in a horizontal line, if needed */
+  }
+
+  nav ul {
+    display: grid; /* Switches to grid layout for smaller screens */
+    grid-auto-flow: column; /* Aligns items in a horizontal line */
+    grid-gap: 1px; /* Space between grid items */
+  }
+
+  #home-section,
+  #image-and-text,
+  .carousel-slide {
+    display: grid; /* Switches to grid layout for smaller screens */
+    grid-auto-flow: row; /* Stack items vertically */
+  }
+
+  #home-image,
+  #about-image {
+    max-width: 100%; /* Ensures images do not exceed the width of their container */
+  }
+
+  .social-media-links {
+    display: grid; /* Switches to grid layout for smaller screens */
+    justify-content: end; /* Aligns grid items towards the end */
+  }
+
+  #contact-section {
+    display: grid; /* Switches to grid layout for smaller screens */
+    grid-auto-flow: row; /* Stack items vertically */
+  }
+
+  #contact-image {
+    justify-self: center; /* Centers the image horizontally in its grid cell */
+    width: auto; /* Adjusts width to be auto on smaller screens */
+    margin-bottom: 20px; /* Adds spacing below the image */
+  }
+
+  .card {
+    padding: 10px; /* Reduces padding on smaller screens */
+  }
+  #contact-container.card {
+    padding: 15px; /* Smaller padding on small screens */
+  }
+
+  #contact-details {
+    display: grid; /* Switches to grid layout */
+    grid-auto-flow: row; /* Stack details vertically */
+    justify-items: start; /* Aligns items to the start of their grid cell */
+  }
+
+  .carousel {
+    grid-template-columns: 1fr; /* Display one column */
+    grid-auto-flow: row; /* Stack items vertically */
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    column-gap: 0; /* Remove column gap */
+  }
+
+  .carousel::-webkit-scrollbar {
+    width: 4px; /* Adjust the scrollbar width for smaller screens */
+  }
+
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 2px; /* Optionally add border-radius for the thumb */
+  }
+
+  .carousel-slide {
+    width: 100%; /* Make the slide full width for smaller screens */
+    margin: 0; /* Remove horizontal margin for smaller screens */
+  }
+
+  .carousel-slide {
+    width: 80%; /* Increase width to take more space on smaller screens */
+    display: grid; /* Switches to grid layout */
+    grid-auto-flow: row; /* Stack items vertically within the slide */
+  }
+
+  .carousel-image {
+    max-width: 100%; /* Make the image fill its container */
+    margin: 0; /* Remove margin for smaller screens */
+    box-shadow: none; /* Remove shadow for smaller screens */
+    border-radius: 0; /* Remove rounded corners for smaller screens */
+  }
+  .carousel-text {
+    margin-top: auto;
+    margin-bottom: auto; /* Full width on smaller screens */
+  }
+  .carousel-text {
+    width: 100%; /* Make the text container full width for smaller screens */
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+  .carousel-container {
+    max-width: 100%;
+  }
+  .carousel-control {
+    padding: 3px 6px; /* Adjust padding for smaller screens */
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+  }
+
+  .carousel-text h2,
+  .carousel-text p {
+    font-size: smaller; /* Smaller font size */
+  }
+}
