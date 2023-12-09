@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muse</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="logo-container">
         <a href="index.html" class="home-link">
-          <img src="Images/logo.png" alt="Logo" class="logo-image" />
+          <img src="logo.png" alt="Logo" class="logo-image" />
         </a>
       </div>
       <nav class="site-navigation">
@@ -27,36 +27,75 @@
     <main id="main-content-muse">
       <section id="muse-section">
         <h1 id="muse-title">Creative Inspirations and Musings</h1>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-slide" id="carousel-muse-1">
+              <object
+                data="https://www.youtube.com/embed/RzkD_rTEBYs"
+                type="text/html"
+                class="carousel-image"
+              >
+                <param
+                  name="src"
+                  value="https://www.youtube.com/embed/RzkD_rTEBYs"
+                />
+                <param name="title" value="Inspiring Tech Talk" />
+                <param name="frameborder" value="0" />
+                <param
+                  name="allow"
+                  value="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
+                <param name="allowfullscreen" value="true" />
+                <p>
+                  This browser does not support the object tag. Please install a
+                  modern browser to view the content.
+                </p>
+              </object>
+              <div class="carousel-text">
+                <h2>Inspiring Tech Talk</h2>
+                <p>
+                  A captivating tech talk that discusses the future of AI and
+                  its impact on society.
+                </p>
+              </div>
+            </div>
 
-        <div class="carousel" id="carousel-muse-1">
-          <a
-            href="https://www.youtube.com/embed/RzkD_rTEBYs"
-            aria-label="Watch Inspiring Tech Talk on YouTube"
-          >
-            Inspiring Tech Talk
-          </a>
-          <div class="carousel-text">
-            <p>
-              A captivating tech talk that discusses the future of AI and its
-              impact on society.
-            </p>
+            <div class="carousel-slide" id="carousel-muse-2">
+              <object
+                data="https://www.youtube.com/embed/wLlL46pYcg4"
+                type="text/html"
+                class="carousel-image"
+              >
+                <param
+                  name="src"
+                  value="https://www.youtube.com/embed/wLlL46pYcg4"
+                />
+                <param
+                  name="title"
+                  value="Documentary on Software Innovation"
+                />
+                <param name="frameborder" value="0" />
+                <param
+                  name="allow"
+                  value="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
+                <param name="allowfullscreen" value="true" />
+                <p>
+                  This browser does not support the object tag. Please install a
+                  modern browser to view the content.
+                </p>
+              </object>
+              <div class="carousel-text">
+                <h2>Documentary on Software Innovation</h2>
+                <p>
+                  An inspiring documentary that delves into software innovations
+                  that changed the world.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="carousel" id="carousel-muse-2">
-          <a
-            href="https://www.youtube.com/embed/wLlL46pYcg4"
-            aria-label="Watch Documentary on Software Innovation on YouTube"
-          >
-            Documentary on Software Innovation
-          </a>
-
-          <div class="carousel-text">
-            <p>
-              An inspiring documentary that delves into software innovations
-              that changed the world.
-            </p>
-          </div>
+          <button class="carousel-control prev">← Prev</button>
+          <button class="carousel-control next">Next →</button>
         </div>
       </section>
     </main>
@@ -69,11 +108,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="Images/telegram-icon.jpg"
-            alt="Telegram"
-            class="social-icon"
-          />
+          <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
         </a>
         <a
           href="https://github.com/ruhamayohannes"
@@ -81,7 +116,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="Images/github-icon.jpg" alt="GitHub" class="social-icon" />
+          <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
         </a>
         <a
           href="https://X.com/rurudaya"
@@ -89,7 +124,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="Images/x-icon.png" alt="X Profile" class="social-icon" />
+          <img src="x-icon.png" alt="X Profile" class="social-icon" />
         </a>
       </div>
       <p class="copyright-text">
