@@ -8,10 +8,7 @@ body {
 
 header.site-header {
   display: grid;
-  grid-template-columns: repeat(
-    2,
-    1fr
-  ); /* Adjust the number of columns as needed */
+  grid-template-columns: repeat(2, 1fr);
   align-items: start;
   background-color: white;
   color: magenta;
@@ -20,8 +17,8 @@ header.site-header {
 
 .logo-container {
   display: grid;
-  grid-template-columns: auto; /* Adjust as needed for content */
-  justify-items: start; /* Aligns content at the start of the grid area */
+  grid-template-columns: auto;
+  justify-items: start;
 }
 
 .logo-image {
@@ -32,18 +29,15 @@ header.site-header {
 
 nav.site-navigation {
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Adjust based on the number of items */
-  justify-content: end; /* Aligns items to the end of the container */
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: end;
 }
 
 nav ul {
   display: grid;
-  grid-auto-flow: column; /* Aligns the items horizontally */
-  grid-gap: 20px; /* Equivalent to gap in flexbox */
-  align-items: center; /* Keeps the alignment to center */
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -124,105 +118,98 @@ main {
 }
 
 #home-section {
-  display: grid; /* Enables grid layout */
-  grid-auto-flow: column; /* Places items in a horizontal layout */
-  overflow: auto; /* Allows scrolling if content overflows */
+  display: grid;
+  grid-auto-flow: column;
+  overflow: auto;
 }
 
 img {
-  max-width: 100%; /* Ensures image does not exceed column width */
-  height: auto; /* Maintains aspect ratio */
-  align-self: center; /* Centers image vertically within column */
+  max-width: 100%;
+  height: auto;
+  align-self: center;
 }
 
 .left-column,
 .right-column {
-  display: grid; /* Enables grid layout */
-  grid-template-rows: auto; /* Allows rows to adjust based on content */
-  justify-content: center; /* Centers content horizontally in the grid cell */
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
   box-sizing: border-box;
-  padding: 0 20px; /* Add padding on both sides for spacing */
+  padding: 0 20px;
 }
 
 .left-column {
-  display: grid; /* Switches to grid layout */
-  grid-auto-flow: row; /* Aligns the child elements in a column */
-  justify-items: end; /* Aligns items to the right end of the grid cell */
-  padding-right: 20px; /* Keeps the padding for consistency */
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: end;
+  padding-right: 20px;
 }
 
 #home-image {
-  width: 100%; /* Ensures the image is responsive and fills the column */
-  height: auto; /* Maintains aspect ratio */
-  justify-self: center; /* Center image horizontally within its grid cell */
+  width: 100%;
+  height: auto;
+  justify-self: center;
 }
 
 .right-column {
-  padding-left: 20px; /* Adds spacing between the columns */
+  padding-left: 20px;
 }
 
 #contact-details {
-  display: grid; /* Switches to grid layout */
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(150px, 1fr)
-  ); /* Creates flexible columns that wrap */
-  gap: 10px; /* Space between grid items */
-  justify-content: space-between; /* Distributes items evenly across the container */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  justify-content: space-between;
 }
 
 #contact-form {
-  display: grid; /* Switches to grid layout */
-  grid-auto-flow: row; /* Aligns the child elements in a column */
-  row-gap: 10px; /* Space between form elements */
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 10px;
 }
 
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
-  padding: 8px; /* Padding inside input fields */
-  border: 1px solid #ccc; /* Border color for inputs */
-  border-radius: 5px; /* Rounded corners for inputs */
-  margin-bottom: 10px; /* Space below inputs */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 #contact-details p,
 #contact-form input,
 #contact-form textarea,
 #contact-form label {
-  margin: 10px 0; /* Provides consistent top and bottom spacing */
-  overflow: hidden; /* Prevents content from spilling outside the boundaries */
+  margin: 10px 0;
+  overflow: hidden;
 }
 
 input[type="submit"] {
-  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
-  padding: 10px 15px; /* Adds padding for better touch area and aesthetics */
-  margin-top: 10px; /* Adds margin on the top for spacing from the last form element */
-  border: none; /* Removes the default border */
-  border-radius: 5px; /* Rounds the corners of the button */
-  background-color: rgb(
-    250,
-    117,
-    250
-  ); /* Bright background color for the button */
-  color: white; /* Sets the text color to white */
-  font-weight: bold; /* Makes the button text bold */
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(250, 117, 250);
+  color: white;
+  font-weight: bold;
   overflow: hidden;
-  transition: background-color 0.3s; /* Smooth transition for background color change */
+  transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
-  background-color: rgb(230, 107, 230); /* Slightly darker shade on hover */
-  color: black; /* Changes text color to black on hover */
-  border-radius: 5px; /* Maintains rounded corners on hover */
+  background-color: rgb(230, 107, 230);
+  color: black;
+  border-radius: 5px;
 }
 
 section h1,
 section h2,
 section h3,
 section h4 {
-  font-size: 2em; /* Sets the font size */
-  margin: 0.67em 0; /* Top and bottom margins */
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 .carousel-container {
@@ -262,39 +249,39 @@ section h4 {
   scroll-snap-align: start;
   position: relative;
   align-items: start;
-  width: 300px; /* Fixed width for each slide */
-  background-color: #fff; /* Background color of the slide */
-  border-radius: 10px; /* Rounded corners for the slide */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  padding: 20px; /* Padding inside the slide */
-  margin: 0 10px; /* Horizontal margin for the slide */
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 10px;
   min-width: 200px;
 }
 
 .carousel-image {
-  width: 100%; /* Responsive image width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 5px; /* Rounded corners for the image */
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
   margin-top: auto;
-  margin-bottom: auto; /* Space above and below the image */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-text {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Height adjusts to content */
-  padding: 0 10px; /* Padding on both sides */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-  background-color: rgb(249, 247, 248); /* Light background color */
-  margin-right: 20px; /* Adjusted right margin */
-  overflow: hidden; /* Ensures content doesn't spill out */
-  text-align: center; /* Center the text */
+  width: 100%;
+  height: auto;
+  padding: 0 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(249, 247, 248);
+  margin-right: 20px;
+  overflow: hidden;
+  text-align: center;
 }
 
 .carousel-text h2,
 .carousel-text p {
-  margin: 5px 0; /* Margin for spacing */
+  margin: 5px 0;
 }
 
 .carousel-control {
@@ -312,7 +299,7 @@ section h4 {
 }
 
 .carousel-text h2 {
-  margin-bottom: 10px; /* Space below the heading */
+  margin-bottom: 10px;
   font-size: 1.2em;
 }
 
@@ -325,141 +312,141 @@ section h4 {
 }
 
 .carousel-text p {
-  font-size: 0.9em; /* Smaller font size for the description */
+  font-size: 0.9em;
 }
 
 footer.site-footer {
-  display: grid; /* Switches to grid layout */
-  place-items: center; /* Centers content both horizontally and vertically */
-  background-color: black; /* Background color */
-  color: magenta; /* Text color */
-  padding: 1em 0; /* Padding on top and bottom */
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: magenta;
+  padding: 1em 0;
 }
 
 .social-media-links {
-  display: grid; /* Switches to grid layout */
-  justify-content: end; /* Aligns the grid items towards the end of the row */
-  align-items: end; /* Aligns the grid items towards the end of the column */
-  grid-auto-flow: column; /* Places items in a horizontal layout */
-  gap: 50px; /* Space between grid items */
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  grid-auto-flow: column;
+  gap: 50px;
 }
 
 .social-icon {
-  width: 30px; /* Fixed width */
-  height: 30px; /* Fixed height */
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 480px) {
   header.site-header {
-    display: grid; /* Switch to grid layout for smaller screens */
+    display: grid;
     grid-template-columns: 1fr;
-    justify-items: start; /* Stack items vertically */
+    justify-items: start;
   }
 
   nav.site-navigation {
-    display: grid; /* Ensures the navigation uses grid layout */
-    justify-content: end; /* Horizontally centers the grid items */
-    grid-auto-flow: row; /* Aligns items in a horizontal line, if needed */
+    display: grid;
+    justify-content: end;
+    grid-auto-flow: row;
   }
 
   nav ul {
-    display: grid; /* Switches to grid layout for smaller screens */
-    grid-auto-flow: column; /* Aligns items in a horizontal line */
-    grid-gap: 1px; /* Space between grid items */
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1px;
   }
 
   #home-section,
   #image-and-text,
   .carousel-slide {
-    display: grid; /* Switches to grid layout for smaller screens */
-    grid-auto-flow: row; /* Stack items vertically */
+    display: grid;
+    grid-auto-flow: row;
   }
 
   #home-image,
   #about-image {
-    max-width: 100%; /* Ensures images do not exceed the width of their container */
+    max-width: 100%;
   }
 
   .social-media-links {
-    display: grid; /* Switches to grid layout for smaller screens */
-    justify-content: end; /* Aligns grid items towards the end */
+    display: grid;
+    justify-content: end;
   }
 
   #contact-section {
-    display: grid; /* Switches to grid layout for smaller screens */
-    grid-auto-flow: row; /* Stack items vertically */
+    display: grid;
+    grid-auto-flow: row;
   }
 
   #contact-image {
-    justify-self: center; /* Centers the image horizontally in its grid cell */
-    width: auto; /* Adjusts width to be auto on smaller screens */
-    margin-bottom: 20px; /* Adds spacing below the image */
+    justify-self: center;
+    width: auto;
+    margin-bottom: 20px;
   }
 
   .card {
-    padding: 10px; /* Reduces padding on smaller screens */
+    padding: 10px;
   }
   #contact-container.card {
-    padding: 15px; /* Smaller padding on small screens */
+    padding: 15px;
   }
 
   #contact-details {
-    display: grid; /* Switches to grid layout */
-    grid-auto-flow: row; /* Stack details vertically */
-    justify-items: start; /* Aligns items to the start of their grid cell */
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: start;
   }
 
   .carousel {
-    grid-template-columns: 1fr; /* Display one column */
-    grid-auto-flow: row; /* Stack items vertically */
-    overflow-x: scroll; /* Allow horizontal scrolling */
-    column-gap: 0; /* Remove column gap */
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    overflow-x: scroll;
+    column-gap: 0;
   }
 
   .carousel::-webkit-scrollbar {
-    width: 4px; /* Adjust the scrollbar width for smaller screens */
+    width: 4px;
   }
 
   .carousel::-webkit-scrollbar-thumb {
     background-color: #ccc;
-    border-radius: 2px; /* Optionally add border-radius for the thumb */
+    border-radius: 2px;
   }
 
   .carousel-slide {
-    width: 100%; /* Make the slide full width for smaller screens */
-    margin: 0; /* Remove horizontal margin for smaller screens */
+    width: 100%;
+    margin: 0;
   }
 
   .carousel-slide {
-    width: 80%; /* Increase width to take more space on smaller screens */
-    display: grid; /* Switches to grid layout */
-    grid-auto-flow: row; /* Stack items vertically within the slide */
+    width: 80%;
+    display: grid;
+    grid-auto-flow: row;
   }
 
   .carousel-image {
-    max-width: 100%; /* Make the image fill its container */
-    margin: 0; /* Remove margin for smaller screens */
-    box-shadow: none; /* Remove shadow for smaller screens */
-    border-radius: 0; /* Remove rounded corners for smaller screens */
+    max-width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
   }
   .carousel-text {
     margin-top: auto;
-    margin-bottom: auto; /* Full width on smaller screens */
+    margin-bottom: auto;
   }
   .carousel-text {
-    width: 100%; /* Make the text container full width for smaller screens */
-    margin-right: 0; /* Remove right margin for smaller screens */
+    width: 100%;
+    margin-right: 0;
   }
   .carousel-container {
     max-width: 100%;
   }
   .carousel-control {
-    padding: 3px 6px; /* Adjust padding for smaller screens */
-    font-size: 0.8em; /* Adjust font size for smaller screens */
+    padding: 3px 6px;
+    font-size: 0.8em;
   }
 
   .carousel-text h2,
   .carousel-text p {
-    font-size: smaller; /* Smaller font size */
+    font-size: smaller;
   }
 }

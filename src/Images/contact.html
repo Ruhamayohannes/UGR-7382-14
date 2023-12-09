@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="logo-container">
         <a href="index.html" class="home-link">
-          <img src="Images/logo.png" alt="Logo" class="logo-image" />
+          <img src="logo.png" alt="Logo" class="logo-image" />
         </a>
       </div>
       <nav class="site-navigation">
@@ -27,69 +27,71 @@
     <main id="main-content-contact">
       <section id="contact-section">
         <h1 id="contact-title">Get in Touch</h1>
-        <img
-          src="Images/contact.png"
-          alt="Contact"
-          id="contact-image"
-          width="300"
-          height="200"
-        />
-        <div class="card" id="contact-container">
-          <p>
-            I'm always open to discussing new projects, creative ideas, or
-            opportunities to be part of your visions. Feel free to contact me
-            using the details below or send a message directly through this
-            page.
-          </p>
-          <div id="contact-details">
+        <div class="flex-container">
+          <img src="contact.png" alt="Contact" id="contact-image" />
+          <div class="card" id="contact-container">
             <p>
-              <strong>Email:</strong>
-              <a href="mailto:ruhamayohannesm@gmail.com"
-                >ruhamayohannesm@gmail.com</a
-              >
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your visions. Feel free to contact me
+              using the details below or send a message directly through this
+              page.
             </p>
-            <p><strong>Phone:</strong> +251 964 464 448</p>
-            <p>
-              <strong>Telegram:</strong>
-              <a href="https://t.me/rurudaya" target="_blank"
-                >Contact me on Telegram</a
-              >
-            </p>
-            <p>
-              <strong>GitHub:</strong>
-              <a href="https://github.com/ruhamayohannes" target="_blank"
-                >ruhamayohannes on GitHub</a
-              >
-            </p>
+            <div id="contact-details">
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:ruhamayohannesm@gmail.com" target="_blank"
+                  >ruhamayohannesm@gmail.com</a
+                >
+              </p>
+              <p><strong>Phone:</strong> +251 964 464 448</p>
+              <p>
+                <strong>Telegram:</strong>
+                <a
+                  href="https://t.me/rurudaya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Contact me on Telegram</a
+                >
+              </p>
+              <p>
+                <strong>GitHub:</strong>
+                <a
+                  href="https://github.com/ruhamayohannes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ruhamayohannes on GitHub</a
+                >
+              </p>
+            </div>
+            <form id="contact-form">
+              <label for="name">Your Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+              /><br />
+
+              <label for="email">Your Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email"
+              /><br />
+
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your message"
+                rows="4"
+              ></textarea
+              ><br />
+
+              <input type="submit" value="Send Message" />
+            </form>
           </div>
-          <form id="contact-form">
-            <label for="name">Your Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-            /><br />
-
-            <label for="email">Your Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            /><br />
-
-            <label for="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your message"
-              rows="4"
-            ></textarea
-            ><br />
-
-            <input type="submit" value="Send Message" />
-          </form>
         </div>
       </section>
     </main>
@@ -102,11 +104,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="Images/telegram-icon.jpg"
-            alt="Telegram"
-            class="social-icon"
-          />
+          <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
         </a>
         <a
           href="https://github.com/ruhamayohannes"
@@ -114,7 +112,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="Images/github-icon.jpg" alt="GitHub" class="social-icon" />
+          <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
         </a>
         <a
           href="https://X.com/rurudaya"
@@ -122,7 +120,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="Images/x-icon.png" alt="X Profile" class="social-icon" />
+          <img src="x-icon.png" alt="X Profile" class="social-icon" />
         </a>
       </div>
       <p class="copyright-text">
