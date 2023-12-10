@@ -483,4 +483,8 @@ footer.site-footer {
   .carousel-text {
     width: 100%;
   }
+  .carousel-text h2,
+  .carousel-text p {
+    font-size: smaller;
+  }
 }
