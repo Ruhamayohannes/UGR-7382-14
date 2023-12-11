@@ -335,6 +335,13 @@ section h4 {
   font-size: 0.9em;
 }
 
+.carousel-controls {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  padding: 1rem;
+}
+
 footer.site-footer {
   display: flex;
   flex-direction: column;
@@ -478,6 +485,110 @@ footer.site-footer {
   .carousel-slide {
     width: 80%;
     flex-direction: column;
+  }
+  .carousel-image,
+  .carousel-text {
+    width: 100%;
+  }
+  .carousel-text h2,
+  .carousel-text p {
+    font-size: smaller;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  #main-content-index,
+  #main-content-about,
+  #main-content-contact,
+  #main-content-tasks,
+  #main-content-muse {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #home-section,
+  #about-section,
+  #muse-section,
+  .carousel-slide {
+    flex-direction: column;
+  }
+
+  #about-section,
+  .top-row,
+  .bottom-row,
+  .left-column-about,
+  .right-column-about,
+  .column {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    padding: 0.2em;
+    flex-basis: 100%;
+  }
+
+  .bottom-row h3,
+  .bottom-row h4,
+  .bottom-row p,
+  .column {
+    max-width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  #home-image {
+    max-width: 70%;
+  }
+  #about-image {
+    max-width: 70%;
+    align-self: flex-start;
+    margin-right: 1rem;
+    margin-left: 4rem;
+  }
+
+  .card #contact-container.card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #contact-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .left-column,
+  .right-column {
+    flex: 1;
+    padding: 0 0.625rem;
+    align-items: center;
+  }
+
+  .left-column {
+    align-items: center;
+    padding-right: 0.625rem;
+  }
+
+  .right-column {
+    padding-left: 0.625rem;
+  }
+
+  #contact-section {
+    flex-direction: column;
+  }
+
+  .social-media-links {
+    justify-content: end;
+  }
+
+  .carousel-slide {
+    width: 75%;
+    flex-direction: column;
+    height: auto;
   }
   .carousel-image,
   .carousel-text {
