@@ -335,13 +335,6 @@ section h4 {
   font-size: 0.9em;
 }
 
-.carousel-controls {
-  display: flex;
-  justify-content: left;
-  gap: 1rem;
-  padding: 1rem;
-}
-
 footer.site-footer {
   display: flex;
   flex-direction: column;
@@ -597,5 +590,70 @@ footer.site-footer {
   .carousel-text h2,
   .carousel-text p {
     font-size: smaller;
+  }
+}
+
+@media (max-width: 1279px) {
+  .hamburger-menu {
+    cursor: pointer;
+    align-self: flex-end;
+  }
+
+  .hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: magenta;
+    margin: 6px 0;
+  }
+
+  .site-navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 40vh;
+    background-color: #ffffff;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .site-navigation ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .site-navigation li {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .site-navigation a {
+    text-decoration: none;
+    color: magenta;
+    font-size: 16px;
+    padding: 12px 24px;
+    display: block;
+    transition: color 0.3s;
+  }
+
+  .site-navigation.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+  }
+
+  .site-navigation a:hover {
+    color: rgb(250, 117, 250);
   }
 }
