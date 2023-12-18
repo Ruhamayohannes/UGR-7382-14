@@ -3,45 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruhama's Portfolio</title>
+    <title>About</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
     />
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar is-white" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
-          <img src="logo.png" alt="Logo" style="max-width: 150px" />
+          <figure class="image is-240x240">
+            <img src="logo.png" alt="Logo" />
+          </figure>
         </a>
+
+        <div class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
 
       <div class="navbar-menu">
-        <div class="navbar-start">
+        <div class="navbar-end">
           <a
-            class="navbar-item has-text-weight-bold has-text-magenta"
+            class="navbar-item has-text-pink has-text-weight-bold"
             href="index.html"
             >Home</a
           >
           <a
-            class="navbar-item has-text-weight-bold has-text-magenta"
+            class="navbar-item has-text-pink has-text-weight-bold"
             href="about.html"
             >About</a
           >
           <a
-            class="navbar-item has-text-weight-bold has-text-magenta"
+            class="navbar-item has-text-pink has-text-weight-bold"
             href="tasks.html"
             >Tasks</a
           >
           <a
-            class="navbar-item has-text-weight-bold has-text-magenta"
+            class="navbar-item has-text-pink has-text-weight-bold"
             href="contact.html"
             >Contact</a
           >
           <a
-            class="navbar-item has-text-weight-bold has-text-magenta"
+            class="navbar-item has-text-pink has-text-weight-bold"
             href="muse.html"
             >Muse</a
           >
@@ -49,52 +56,49 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
     <section class="section">
       <div class="container">
         <div class="columns">
           <div class="column is-half">
-            <figure class="image">
-              <img
-                src="me.jpg"
-                alt="A picture of me"
-                style="border-radius: 0.625rem"
-              />
-            </figure>
+            <img src="me.jpg" alt="A picture of me" />
           </div>
           <div class="column is-half">
             <div class="content">
               <h4 class="title is-4">Biography</h4>
               <p>
                 Hi there! I'm Ruhama, an enthusiastic junior software engineer
-                based in Addis Ababa, Ethiopia...
+                based in Addis Ababa, Ethiopia. With a passion for technology
+                and innovation, I'm making an impact in the tech world.
               </p>
 
               <h4 class="title is-4">Experience</h4>
               <p>
                 My software engineering journey started in university with
                 projects ranging from web applications to collaborative software
-                development...
+                development. This gave me a solid foundation in coding,
+                teamwork, and project management.
               </p>
 
               <h4 class="title is-4">Achievements</h4>
               <p>
                 I led a team to victory in a national coding competition,
-                developing an application for local community needs...
+                developing an application for local community needs. This
+                experience sharpened my technical skills, leadership, and
+                strategic thinking.
               </p>
 
               <h4 class="title is-4">Awards</h4>
               <p>
                 I received the 'Excellence in Innovation' award from my
                 university and accolades from tech communities for my
-                contributions to open-source projects...
+                contributions to open-source projects.
               </p>
 
               <h4 class="title is-4">Hobbies</h4>
               <p>
                 Besides coding, I love literature, exploring fiction and
                 philosophy. I'm also a cinema enthusiast, fond of the
-                storytelling and cinematography of early 2000s movies...
+                storytelling and cinematography of early 2000s movies.
               </p>
 
               <h4 class="title is-4">Invitation</h4>
@@ -109,34 +113,42 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer has-background-black has-text-magenta">
+    <footer class="footer">
       <div class="content has-text-centered">
-        <div class="social-media-links">
+        <div class="social-media-links is-flex is-justify-content-center">
           <a
             href="https://t.me/rurudaya"
             target="_blank"
             rel="noopener noreferrer"
+            class="mr-2"
           >
-            <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
+            <figure class="image is-24x24">
+              <img src="telegram-icon.jpg" alt="Telegram" />
+            </figure>
           </a>
           <a
             href="https://github.com/ruhamayohannes"
             target="_blank"
             rel="noopener noreferrer"
+            class="mr-2"
           >
-            <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
+            <figure class="image is-24x24">
+              <img src="github-icon.jpg" alt="GitHub" />
+            </figure>
           </a>
           <a
             href="https://X.com/rurudaya"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="x-icon.png" alt="X Profile" class="social-icon" />
+            <figure class="image is-24x24">
+              <img src="x-icon.png" alt="X Profile" />
+            </figure>
           </a>
         </div>
         <p>&copy; 2023 Ruhama Yohannes, All rights reserved.</p>
       </div>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

@@ -3,56 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasks</title>
-    <link rel="stylesheet" href="/UGR-7382-14/src/css/styles.css" />
+    <title>Muse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
   </head>
   <body>
-    <header class="site-header">
-      <div class="logo-container">
-        <a href="index.html" class="home-link">
-          <img src="logo.png" alt="Logo" class="logo-image" />
+    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <figure class="image is-240x240">
+            <img src="logo.png" alt="Logo" />
+          </figure>
         </a>
-      </div>
-      <nav class="site-navigation">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="tasks.html" class="nav-link">Tasks</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="muse.html" class="nav-link">Muse</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main id="main-content-muse">
-      <section id="muse-section">
-        <h1 id="muse-title">Creative Inspirations and Musings</h1>
-        <div class="carousel-container">
-          <div class="carousel">
-            <div class="carousel-slide" id="carousel-muse-1">
-              <object
-                data="https://www.youtube.com/embed/RzkD_rTEBYs"
-                type="text/html"
-                class="carousel-image"
-              >
-                <param
-                  name="src"
-                  value="https://www.youtube.com/embed/RzkD_rTEBYs"
-                />
-                <param name="title" value="Inspiring Tech Talk" />
-                <param name="frameborder" value="0" />
-                <param
-                  name="allow"
-                  value="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                />
-                <param name="allowfullscreen" value="true" />
-                <p>
-                  This browser does not support the object tag. Please install a
-                  modern browser to view the content.
-                </p>
-              </object>
-              <div class="carousel-text">
-                <h2>Inspiring Tech Talk</h2>
+        <div class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="tasks.html"
+            >Tasks</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="contact.html"
+            >Contact</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="muse.html"
+            >Muse</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="title">Creative Inspirations and Musings</h1>
+
+          <div class="columns">
+            <div class="column">
+              <div class="box">
+                <p class="title">Inspiring Tech Talk</p>
+                <a
+                  href="https://www.youtube.com/watch?v=RzkD_rTEBYs"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/RzkD_rTEBYs/0.jpg"
+                    alt="Inspiring Tech Talk"
+                  />
+                </a>
                 <p>
                   A captivating tech talk that discusses the future of AI and
                   its impact on society.
@@ -60,33 +81,18 @@
               </div>
             </div>
 
-            <div class="carousel-slide" id="carousel-muse-2">
-              <object
-                data="https://www.youtube.com/embed/wLlL46pYcg4"
-                type="text/html"
-                class="carousel-image"
-              >
-                <param
-                  name="src"
-                  value="https://www.youtube.com/embed/wLlL46pYcg4"
-                />
-                <param
-                  name="title"
-                  value="Documentary on Software Innovation"
-                />
-                <param name="frameborder" value="0" />
-                <param
-                  name="allow"
-                  value="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                />
-                <param name="allowfullscreen" value="true" />
-                <p>
-                  This browser does not support the object tag. Please install a
-                  modern browser to view the content.
-                </p>
-              </object>
-              <div class="carousel-text">
-                <h2>Documentary on Software Innovation</h2>
+            <div class="column">
+              <div class="box">
+                <p class="title">Documentary on Software Innovation</p>
+                <a
+                  href="https://www.youtube.com/watch?v=wLlL46pYcg4"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/wLlL46pYcg4/0.jpg"
+                    alt="Documentary on Software Innovation"
+                  />
+                </a>
                 <p>
                   An inspiring documentary that delves into software innovations
                   that changed the world.
@@ -94,44 +100,46 @@
               </div>
             </div>
           </div>
-          <div class="carousel-controls">
-            <button class="carousel-control prev">← Prev</button>
-            <button class="carousel-control next">Next →</button>
-          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="social-media-links">
-        <a
-          href="https://t.me/rurudaya"
-          class="telegram-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
-        </a>
-        <a
-          href="https://github.com/ruhamayohannes"
-          class="github-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
-        </a>
-        <a
-          href="https://X.com/rurudaya"
-          class="x-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="x-icon.png" alt="X Profile" class="social-icon" />
-        </a>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <div class="social-media-links is-flex is-justify-content-center">
+          <a
+            href="https://t.me/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-2"
+          >
+            <figure class="image is-24x24">
+              <img src="telegram-icon.jpg" alt="Telegram" />
+            </figure>
+          </a>
+          <a
+            href="https://github.com/ruhamayohannes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-2"
+          >
+            <figure class="image is-24x24">
+              <img src="github-icon.jpg" alt="GitHub" />
+            </figure>
+          </a>
+          <a
+            href="https://X.com/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="image is-24x24">
+              <img src="x-icon.png" alt="X Profile" />
+            </figure>
+          </a>
+        </div>
+        <p>&copy; 2023 Ruhama Yohannes, All rights reserved.</p>
       </div>
-      <p class="copyright-text">
-        &copy; 2023 Ruhama Yohannes, All rights reserved.
-      </p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

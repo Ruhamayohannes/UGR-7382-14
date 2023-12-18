@@ -4,147 +4,194 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasks</title>
-    <link rel="stylesheet" href="/UGR-7382-14/src/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
   </head>
   <body>
-    <header class="site-header">
-      <div class="logo-container">
-        <a href="index.html" class="home-link">
-          <img src="logo.png" alt="Logo" class="logo-image" />
+    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <figure class="image is-240x240">
+            <img src="logo.png" alt="Logo" />
+          </figure>
         </a>
+
+        <div class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <nav class="site-navigation">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="tasks.html" class="nav-link">Tasks</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="muse.html" class="nav-link">Muse</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main id="main-content-tasks">
-      <section id="tasks-section">
-        <h1 id="tasks-title">Highlighted Tasks and Projects</h1>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="tasks.html"
+            >Tasks</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="contact.html"
+            >Contact</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="muse.html"
+            >Muse</a
+          >
+        </div>
+      </div>
+    </nav>
 
-        <div class="carousel-container">
-          <div class="carousel">
-            <div class="carousel-slide" id="carousel-task-1">
-              <img
-                src="task1.png"
-                alt="Web Development for E-Commerce"
-                class="carousel-image"
-              />
-              <div class="carousel-text">
-                <h2>Web Development for E-Commerce</h2>
-                <p>
-                  Developed a full-featured e-commerce website using modern web
-                  technologies, focusing on responsive design and user-friendly
-                  interfaces.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-slide" id="carousel-task-2">
-              <img
-                src="task2.png"
-                alt="Mobile App for Health Tracking"
-                class="carousel-image"
-              />
-              <div class="carousel-text">
-                <h2>Mobile App for Health Tracking</h2>
-                <p>
-                  Contributed to the development of a health tracking mobile
-                  application, implementing features for daily health and
-                  activity monitoring.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-slide" id="carousel-task-3">
-              <img
-                src="task3.jpg"
-                alt="Data Analysis Project"
-                class="carousel-image"
-              />
-              <div class="carousel-text">
-                <h2>Data Analysis Project</h2>
-                <p>
-                  Performed data analysis for a marketing research project,
-                  utilizing Python and data visualization tools to extract
-                  actionable insights.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-slide" id="carousel-task-4">
-              <img
-                src="task4.jpg"
-                alt="Cloud Infrastructure Setup"
-                class="carousel-image"
-              />
-              <div class="carousel-text">
-                <h2>Cloud Infrastructure Setup</h2>
-                <p>
-                  Set up and maintained cloud infrastructure for a SaaS
-                  platform, ensuring high availability and scalability using AWS
-                  services.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-slide" id="carousel-task-5">
-              <img
-                src="task5.png"
-                alt="AI Chatbot Development"
-                class="carousel-image"
-              />
-              <div class="carousel-text">
-                <h2>AI Chatbot Development</h2>
-                <p>
-                  Developed an AI-powered chatbot for customer support,
-                  integrating it with a company's website to improve user
-                  engagement and support efficiency.
-                </p>
-              </div>
-            </div>
-          </div>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="title">Highlighted Tasks and Projects</h1>
 
-          <div class="carousel-controls">
-            <button class="carousel-control prev">← Prev</button>
-            <button class="carousel-control next">Next →</button>
+          <div class="columns is-multiline">
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="task1.png" alt="Web Development for E-Commerce" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">Web Development for E-Commerce</p>
+                  <p>
+                    Developed a full-featured e-commerce website using modern
+                    web technologies, focusing on responsive design and
+                    user-friendly interfaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="task2.png" alt="Mobile App for Health Tracking" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">Mobile App for Health Tracking</p>
+                  <p>
+                    Contributed to the development of a health tracking mobile
+                    application, implementing features for daily health and
+                    activity monitoring.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="task3.jpg" alt="Data Analysis Project" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">Data Analysis Project</p>
+                  <p>
+                    Performed data analysis for a marketing research project,
+                    utilizing Python and data visualization tools to extract
+                    actionable insights.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="task4.jpg" alt="Cloud Infrastructure Setup" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">Cloud Infrastructure Setup</p>
+                  <p>
+                    Set up and maintained cloud infrastructure for a SaaS
+                    platform, ensuring high availability and scalability using
+                    AWS services.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="task5.png" alt="AI Chatbot Development" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="title is-4">AI Chatbot Development</p>
+                  <p>
+                    Developed an AI-powered chatbot for customer support,
+                    integrating it with a company's website to improve user
+                    engagement and support efficiency.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="social-media-links">
-        <a
-          href="https://t.me/rurudaya"
-          class="telegram-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
-        </a>
-        <a
-          href="https://github.com/ruhamayohannes"
-          class="github-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
-        </a>
-        <a
-          href="https://X.com/rurudaya"
-          class="x-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="x-icon.png" alt="X Profile" class="social-icon" />
-        </a>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <div class="social-media-links is-flex is-justify-content-center">
+          <a
+            href="https://t.me/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-2"
+          >
+            <figure class="image is-24x24">
+              <img src="telegram-icon.jpg" alt="Telegram" />
+            </figure>
+          </a>
+          <a
+            href="https://github.com/ruhamayohannes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-2"
+          >
+            <figure class="image is-24x24">
+              <img src="github-icon.jpg" alt="GitHub" />
+            </figure>
+          </a>
+          <a
+            href="https://X.com/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="image is-24x24">
+              <img src="x-icon.png" alt="X Profile" />
+            </figure>
+          </a>
+        </div>
+        <p>&copy; 2023 Ruhama Yohannes, All rights reserved.</p>
       </div>
-      <p class="copyright-text">
-        &copy; 2023 Ruhama Yohannes, All rights reserved.
-      </p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

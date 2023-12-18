@@ -3,84 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasks</title>
-    <link rel="stylesheet" href="/UGR-7382-14/src/css/styles.css" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
   </head>
   <body>
-    <header class="site-header">
-      <div class="logo-container">
-        <a href="index.html" class="home-link">
-          <img src="logo.png" alt="Logo" class="logo-image" />
+    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <figure class="image is-240x240">
+            <img src="logo.png" alt="Logo" />
+          </figure>
         </a>
-      </div>
-      <nav class="site-navigation">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="tasks.html" class="nav-link">Tasks</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="muse.html" class="nav-link">Muse</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main id="main-content-index">
-      <div class="card">
-        <section id="home-section">
-          <div class="left-column">
-            <h2 id="home-title">Welcome to my World!</h2>
-            <img src="me.jpg" alt="A picture of me" id="home-image" />
+        <div class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="tasks.html"
+            >Tasks</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="contact.html"
+            >Contact</a
+          >
+          <a
+            class="navbar-item has-text-pink has-text-weight-bold"
+            href="muse.html"
+            >Muse</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half">
+            <h2 class="title">Welcome to my World!</h2>
+            <img src="me.jpg" alt="A picture of me" />
           </div>
-          <div class="right-column">
+          <div class="column is-half">
             <p>
               I'm Ruhama Yohannes, a junior software engineer driven by a
-              passion for technology and a commitment to excellence.<br />
-              My journey in the tech industry has been marked by continuous
-              learning, innovative thinking, and effective collaboration.<br />
-              My expertise spans across various facets of software engineering,
-              including web development, software design, and problem-solving.
-              <br />I take pride in my ability to translate complex requirements
-              into functional and user-friendly solutions. <br />
-              Explore my website to learn more about my projects, experiences,
-              and the skills that I bring to the table. Whether you're looking
-              for a collaborator on an exciting project or just want to discuss
-              technology and its impacts, feel free to reach out.
+              passion for technology and a commitment to excellence. My journey
+              in the tech industry has been marked by continuous learning,
+              innovative thinking, and effective collaboration. My expertise
+              spans across various facets of software engineering, including web
+              development, software design, and problem-solving. I take pride in
+              my ability to translate complex requirements into functional and
+              user-friendly solutions. Explore my website to learn more about my
+              projects, experiences, and the skills that I bring to the table.
+              Whether you're looking for a collaborator on an exciting project
+              or just want to discuss technology and its impacts, feel free to
+              reach out.
             </p>
           </div>
-        </section>
+        </div>
       </div>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <div class="social-media-links">
-        <a
-          href="https://t.me/rurudaya"
-          class="telegram-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="telegram-icon.jpg" alt="Telegram" class="social-icon" />
-        </a>
-        <a
-          href="https://github.com/ruhamayohannes"
-          class="github-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="github-icon.jpg" alt="GitHub" class="social-icon" />
-        </a>
-        <a
-          href="https://X.com/rurudaya"
-          class="x-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="x-icon.png" alt="X Profile" class="social-icon" />
-        </a>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <div class="social-media-links is-flex is-justify-content-center">
+          <a
+            href="https://t.me/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-2"
+          >
+            <figure class="image is-24x24">
+              <img src="telegram-icon.jpg" alt="Telegram" />
+            </figure>
+          </a>
+          <a
+            href="https://github.com/ruhamayohannes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-2"
+          >
+            <figure class="image is-24x24">
+              <img src="github-icon.jpg" alt="GitHub" />
+            </figure>
+          </a>
+          <a
+            href="https://X.com/rurudaya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure class="image is-24x24">
+              <img src="x-icon.png" alt="X Profile" />
+            </figure>
+          </a>
+        </div>
+        <p>&copy; 2023 Ruhama Yohannes, All rights reserved.</p>
       </div>
-      <p class="copyright-text">
-        &copy; 2023 Ruhama Yohannes, All rights reserved.
-      </p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>
